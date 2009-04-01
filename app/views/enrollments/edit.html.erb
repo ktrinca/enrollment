@@ -1,0 +1,108 @@
+<h1>Editing enrollment</h1>
+
+<% form_for(@enrollment) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :lastname %><br />
+    <%= f.text_field :lastname %>
+  </p>
+  <p>
+    <%= f.label :firstname %><br />
+    <%= f.text_field :firstname %>
+  </p>
+  <p>
+    <%= f.label :birth_date %><br />
+    <%= f.date_select :birth_date %>
+  </p>
+  <p>
+    <%= f.label :birthplace %><br />
+    <%= f.text_field :birthplace %>
+  </p>
+  <p>
+    <%= f.label :age %><br />
+    <%= f.text_field :age %>
+  </p>
+  <p>
+    <%= f.label :marital_status %><br />
+    <%= f.text_field :marital_status %>
+  </p>
+  <p>
+    <%= f.label :children %><br />
+    <%= f.text_field :children %>
+  </p>
+  <p>
+    <%= f.label :blood_group %><br />
+    <%= f.text_field :blood_group %>
+  </p>
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label :fixed_phone %><br />
+    <%= f.text_field :fixed_phone %>
+  </p>
+  <p>
+    <%= f.label :cell %><br />
+    <%= f.text_field :cell %>
+  </p>
+  <p>
+    <%= f.label :current_ocupation %><br />
+    <%= f.text_field :current_ocupation %>
+  </p>
+  <p>
+    <%= f.label :name_of_spouse %><br />
+    <%= f.text_field :name_of_spouse %>
+  </p>
+  <p>
+    <%= f.label :secundary_education %><br />
+    <%= f.text_field :secundary_education %>
+  </p>
+  <p>
+    <%= f.label :tertiary_education %><br />
+    <%= f.text_field :tertiary_education %>
+  </p>
+  <p>
+    <%= f.label :institution_of_expenditure %><br />
+    <%= f.text_field :institution_of_expenditure %>
+  </p>
+  <p>
+    <%= f.label :fathers_name %><br />
+    <%= f.text_field :fathers_name %>
+  </p>
+  <p>
+    <%= f.label :fathers_dni %><br />
+    <%= f.text_field :fathers_dni %>
+  </p>
+  <p>
+    <%= f.label :fathers_birth_date %><br />
+    <%= f.date_select :fathers_birth_date %>
+  </p>
+  <p>
+    <%= f.label :fathers_current_occupation %><br />
+    <%= f.text_field :fathers_current_occupation %>
+  </p>
+  <p>
+    <%= f.label :mothers_name %><br />
+    <%= f.text_field :mothers_name %>
+  </p>
+  <p>
+    <%= f.label :mothers_dni %><br />
+    <%= f.text_field :mothers_dni %>
+  </p>
+  <p>
+    <%= f.label :mothers_birth_date %><br />
+    <%= f.date_select :mothers_birth_date %>
+  </p>
+  <p>
+    <%= f.label :mothers_current_occupation %><br />
+    <%= f.text_field :mothers_current_occupation %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @enrollment %> |
+<%= link_to 'Back', enrollments_path %>

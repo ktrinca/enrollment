@@ -1,0 +1,53 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  lastname: MyString
+  firstname: MyString
+  birth_date: 2009-03-31
+  birthplace: MyString
+  age: 1
+  marital_status: 
+  children: 1
+  blood_group: MyString
+  address: MyString
+  fixed_phone: MyString
+  cell: MyString
+  current_ocupation: MyString
+  name_of_spouse: MyString
+  secundary_education: MyString
+  tertiary_education: MyString
+  institution_of_expenditure: MyString
+  fathers_name: MyString
+  fathers_dni: MyString
+  fathers_birth_date: 2009-03-31
+  fathers_current_occupation: MyString
+  mothers_name: MyString
+  mothers_dni: MyString
+  mothers_birth_date: 2009-03-31
+  mothers_current_occupation: MyString
+
+two:
+  lastname: MyString
+  firstname: MyString
+  birth_date: 2009-03-31
+  birthplace: MyString
+  age: 1
+  marital_status: 
+  children: 1
+  blood_group: MyString
+  address: MyString
+  fixed_phone: MyString
+  cell: MyString
+  current_ocupation: MyString
+  name_of_spouse: MyString
+  secundary_education: MyString
+  tertiary_education: MyString
+  institution_of_expenditure: MyString
+  fathers_name: MyString
+  fathers_dni: MyString
+  fathers_birth_date: 2009-03-31
+  fathers_current_occupation: MyString
+  mothers_name: MyString
+  mothers_dni: MyString
+  mothers_birth_date: 2009-03-31
+  mothers_current_occupation: MyString

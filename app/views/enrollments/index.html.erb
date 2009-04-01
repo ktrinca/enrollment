@@ -1,0 +1,66 @@
+<h1>Listing enrollments</h1>
+
+<table>
+  <tr>
+    <th>Lastname</th>
+    <th>Firstname</th>
+    <th>Birth date</th>
+    <th>Birthplace</th>
+    <th>Age</th>
+    <th>Marital status</th>
+    <th>Children</th>
+    <th>Blood group</th>
+    <th>Address</th>
+    <th>Fixed phone</th>
+    <th>Cell</th>
+    <th>Current ocupation</th>
+    <th>Name of spouse</th>
+    <th>Secundary education</th>
+    <th>Tertiary education</th>
+    <th>Institution of expenditure</th>
+    <th>Fathers name</th>
+    <th>Fathers dni</th>
+    <th>Fathers birth date</th>
+    <th>Fathers current occupation</th>
+    <th>Mothers name</th>
+    <th>Mothers dni</th>
+    <th>Mothers birth date</th>
+    <th>Mothers current occupation</th>
+  </tr>
+
+<% @enrollments.each do |enrollment| %>
+  <tr>
+    <td><%=h enrollment.lastname %></td>
+    <td><%=h enrollment.firstname %></td>
+    <td><%=h enrollment.birth_date %></td>
+    <td><%=h enrollment.birthplace %></td>
+    <td><%=h enrollment.age %></td>
+    <td><%=h enrollment.marital_status %></td>
+    <td><%=h enrollment.children %></td>
+    <td><%=h enrollment.blood_group %></td>
+    <td><%=h enrollment.address %></td>
+    <td><%=h enrollment.fixed_phone %></td>
+    <td><%=h enrollment.cell %></td>
+    <td><%=h enrollment.current_ocupation %></td>
+    <td><%=h enrollment.name_of_spouse %></td>
+    <td><%=h enrollment.secundary_education %></td>
+    <td><%=h enrollment.tertiary_education %></td>
+    <td><%=h enrollment.institution_of_expenditure %></td>
+    <td><%=h enrollment.fathers_name %></td>
+    <td><%=h enrollment.fathers_dni %></td>
+    <td><%=h enrollment.fathers_birth_date %></td>
+    <td><%=h enrollment.fathers_current_occupation %></td>
+    <td><%=h enrollment.mothers_name %></td>
+    <td><%=h enrollment.mothers_dni %></td>
+    <td><%=h enrollment.mothers_birth_date %></td>
+    <td><%=h enrollment.mothers_current_occupation %></td>
+    <td><%= link_to 'Show', enrollment %></td>
+    <td><%= link_to 'Edit', edit_enrollment_path(enrollment) %></td>
+    <td><%= link_to 'Destroy', enrollment, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New enrollment', new_enrollment_path %>
