@@ -1,17 +1,41 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%= render( :file          => "layouts/_cabecera.html.erb",
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Enrollments: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'scaffold' %>
-</head>
-<body>
+            :use_full_path => true,
 
-<p style="color: green"><%= flash[:notice] %></p>
+            :locals        => { :title => "Inscripciones" } )
+%>
 
-<%= yield %>
+<div class="PageBackgroundGradient"></div>
+    <div class="PageBackgroundGlare">
+        <div class="PageBackgroundGlareImage"></div>
+</div>
 
-</body>
-</html>
+<div class="Main">
+        <div class="Sheet">
+            <div class="Sheet-tl"></div>
+
+            <div class="Sheet-tr"><div></div></div>
+            <div class="Sheet-bl"><div></div></div>
+            <div class="Sheet-br"><div></div></div>
+            <div class="Sheet-tc"><div></div></div>
+            <div class="Sheet-bc"><div></div></div>
+            <div class="Sheet-cl"><div></div></div>
+            <div class="Sheet-cr"><div></div></div>
+            <div class="Sheet-cc"></div>
+            <div class="Sheet-body">
+              <div class="nav">
+                <ul class="artmenu">
+                        <li><%= link_to '<span><span>Ver Listado</span></span>', enrollments_path %></li>
+                        <li><%= link_to '<span><span>Nueva Inscripción</span></span>', new_enrollment_path %></a></li>
+                 </ul>
+              <div>
+            </div>
+</div>
+
+<div class="PostContent">
+ 
+             <p style="color: green"><%= flash[:notice] %></p>
+               <%= yield %>
+</div> 
+<div class="cleared"></div>
+<%= render(:file => "layouts/_pie.html.erb", :use_full_path => true ) %>

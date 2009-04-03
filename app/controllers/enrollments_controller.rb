@@ -61,7 +61,7 @@ class EnrollmentsController < ApplicationController
 
     respond_to do |format|
       if @enrollment.update_attributes(params[:enrollment])
-        flash[:notice] = 'Enrollment was successfully updated.'
+        flash[:notice] = 'Los Datos se han Actualizado correctamente.'
         format.html { redirect_to(@enrollment) }
         format.xml  { head :ok }
       else
