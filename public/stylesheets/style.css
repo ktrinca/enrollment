@@ -29,8 +29,6 @@ body
 
 .PageBackgroundGlareImage
 {
-  background-image: url('/images/Page-BgGlare.png');
-  background-repeat: no-repeat;
   height: 436px;
   width: 481px;
   margin: 0;
@@ -426,7 +424,6 @@ html:first-child .PageBackgroundGlare
 .artmenu a , .artmenu a span
 {
   height: 28px;
-  display: block;
 }
 
 
