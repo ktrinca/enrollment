@@ -44,7 +44,7 @@ class EnrollmentsController < ApplicationController
 
     respond_to do |format|
       if @enrollment.save
-        flash[:notice] = 'Enrollment was successfully created.'
+        flash[:notice] = 'El proceso de Inscripción ha finalizado correctamente.'
         format.html { redirect_to(@enrollment) }
         format.xml  { render :xml => @enrollment, :status => :created, :location => @enrollment }
       else
